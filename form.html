@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</form></title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+
+<body>
+    <h1><u>Registration form</u></h1><br>
+    <form action="testform.php" method="get">
+        <table>
+            <tr>
+                <td>
+                    <label for="First Name">First Name:</label>
+                </td>
+                <td>
+                    <input type="text" name="fname">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Last Name">Last Name:</label>
+                </td>
+                <td>
+                    <input type="text" name="lname">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Phone No">Phone No:</label>
+                </td>
+                <td>
+                    <input type="tel" name="number">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Gender">Gender:</label>
+                </td>
+                <td>
+
+
+                    <input type="radio" id="Male" name="gender" value="Male">
+                    <label for="Male">Male</label>
+                    <input type="radio" id="Female" name="gender" value="Female">
+                    <label for="Female">Female</label>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Hobbies">Hobbies:</label>
+                </td>
+                <td>
+                    <input type="checkbox" id="Cricket" name="Cricket" value="Cricket">
+                    <label for="Cricket">Cricket</label>
+                    <input type="checkbox" id="Listening music" name="Listening music" value="Listening music">
+                    <label for="Listening music">Listening music</label>
+                    <input type="checkbox" id="Watch movie" name="Watch movie" value="Watch movie">
+                    <label for="Watch movie">Watch movie</label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="City">City:</label>
+                </td>
+                <td>
+                    <select name="Select" id="select" name="select">
+                        <option value="">Select the city</option>
+                        <option value="">Ahmedabad</option>
+                        <option value="">Surat</option>
+                        <option value="">Vadodara</option>
+                        <option value="">Bhavnagar</option>
+                        <option value="">Rajkot</option>
+                        <option value="">Jamnagar</option>
+                        <option value="">Anand</option>
+                        <option value="">Surendranagar</option>
+                        <option value="">Bhuj</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Address">Address:</label>
+                </td>
+                <td>
+                    <textarea name="address" id="address" cols="70" rows="5"></textarea>
+                </td>
+            </tr>
+
+
+        </table>
+    </form>
+    <button>Submit</button>
+</body>
+
+
+</html>
