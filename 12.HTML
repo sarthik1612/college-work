@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+    <style>
+         p.center {
+    text-align: center;
+    color:aqua;
+}
+
+p.large {
+    font-size: 200%;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Task_12: REMOVE THE ALL CSS  classes USING  JQUERY</h1>
+    <p id="item" class="center large">M.S. Dhoni, in full Mahendra Singh Dhoni, (born July 7, 1981, Ranchi, Bihar [now Jharkhand] state, India), Indian cricketer whose rise to prominence in the early 21st century culminated in his captaincy of the Indian national team that won the one-day Cricket World Cup in 2011.</p>
+    <input type="button" value="Click to remove all classes" onclick="remove_classes()" />
+    <center>
+        <button class="btn"><a href="/119/13.html"> Task_13</a></button>
+    </center>
+    <script>
+        function remove_classes()
+{
+$("#item").removeClass();
+}
+    </script>
+</body>
+</html>

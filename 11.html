@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://code.jquery.com/jquery-git.js"></script>
+    <style>
+            p span{
+    text-decoration: underline;
+  }
+    </style>
+</head>
+
+<body>
+    <h1>TASK_11: UNDERLINE THE WORD OF TEXT USING JQUERY </h1>
+        <p>The best way we learn anything is by practice and exercise questions. Here you have the opportunity to practice the Java programming language concepts by solving the exercises starting from basic to more complex exercises.</p>
+    <center>
+        <button class="btn"><a href="/119/12.HTML"> Task_12</a></button>
+    </center>
+<script>
+    $('p').each(function() {
+
+var text_words = $(this).text().split(' ');
+
+	$(this).empty().html(function() {
+
+		for (i = 0; i < text_words.length; i++) {
+			if (i === 0) {
+				$(this).append('<span>' + text_words[i] + '</span>');
+			} else {
+				$(this).append(' <span>' + text_words[i] + '</span>');
+			}
+		}
+	
+	});
+
+});
+
+</script>
+    
+</body>
+</html>

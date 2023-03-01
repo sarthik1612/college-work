@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+   
+</head>
+<body>
+    <H1>TASK_14:Distinguish between left and right mouse click with jQuery.</H1>
+    <h1 style="color: green"></h1>
+      <b>
+        How to distinguish left and 
+        right mouse click using jQuery?
+    </b>
+      <p>You are pressing the :
+          <div class="output">
+    </div>
+    
+      <button>
+        Click Here to check the mousebutton pressed
+    </button>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js">
+    </script>
+    <center>
+        <button class="btn"><a href="/119/15.HTML">TASK_15</a></button>
+    </center>
+    <script type="text/javascript">
+        $('button').mousedown(function(event) {
+            switch (event.which) {
+                case 1:
+                    document.querySelector('.output').innerHTML =
+                        'Left Mouse Button';
+                    break;
+                case 2:
+                    document.querySelector('.output').innerHTML =
+                        'Middle Mouse Button';
+                    break;
+                case 3:
+                    document.querySelector('.output').innerHTML =
+                        'Right Mouse Button';
+                    break;
+                default:
+                    break;
+            }
+        });
+    </script>
+</body>
+</html>

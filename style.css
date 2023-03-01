@@ -1,0 +1,19 @@
+a{
+    text-decoration: none;
+}
+.btn{
+    height: 45px;
+    width: 110px;
+    font-size: 20px;
+    border: none;
+    border-radius: 30px;
+    background:linear-gradient(454deg,#00b4db,#0083b0);
+}
+.btn:hover{
+    color: antiquewhite;
+    border: 1px solid black;
+    background: linear-gradient(454deg,#11998e,#38ef7d);
+}
+h1{
+    text-align: center;
+}
